@@ -1,0 +1,54 @@
+﻿.expressionExplorer
+{
+    padding: 2em 0em 1em 0em;
+}
+
+.exprNodeContainer
+{
+    margin: 0em 0em 0em 0em;
+    padding: 0em;
+    border: 1px solid #CCC;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    position:relative;
+    white-space:nowrap;    
+}
+
+.exprNodeContainerCollapse
+{
+    margin: 0.25em 0em 0.25em 0em;
+    padding: 0em 0.25em 0em 0.25em;
+    border: 1px solid #000;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    cursor: pointer;
+    position:absolute;
+    top:-1.5em;
+    left:0em;
+    background-color: #FFF;
+    font-size: 1em;
+}
+
+.exprNodeValue
+{
+    margin: 0em;
+    padding: 0.25em 1em 0.25em 1em;
+    border: 1px solid #333;
+    font-size: 1em;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+}
+
+.exprNodeStructure
+{
+    margin: 0em;
+    padding: 0em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.exprNodeParent
+{
+    background-color: #FC6;
+    cursor: pointer;
+}

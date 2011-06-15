@@ -1,0 +1,233 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+
+<script src="jquery.expressionExplorer.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+	function getTreeData(){
+		// (((2+3)×(4+5))+Max(20+2, 31, 16, 62, 40))
+
+		var tree = {
+		  "Text": "107",
+		  "Type": "value",
+		  "Children": [
+		    {
+		      "Text": "(",
+		      "Type": "structure",
+		      "Children": []
+		    },
+		    {
+		      "Text": "45",
+		      "Type": "value",
+		      "Children": [
+		        {
+		          "Text": "(",
+		          "Type": "structure",
+		          "Children": []
+		        },
+		        {
+		          "Text": "5",
+		          "Type": "value",
+		          "Children": [
+		            {
+		              "Text": "(",
+		              "Type": "structure",
+		              "Children": []
+		            },
+		            {
+		              "Text": "2",
+		              "Type": "value",
+		              "Children": []
+		            },
+		            {
+		              "Text": "+",
+		              "Type": "structure",
+		              "Children": []
+		            },
+		            {
+		              "Text": "3",
+		              "Type": "value",
+		              "Children": []
+		            },
+		            {
+		              "Text": ")",
+		              "Type": "structure",
+		              "Children": []
+		            }
+		          ]
+		        },
+		        {
+		          "Text": "×",
+		          "Type": "structure",
+		          "Children": []
+		        },
+		        {
+		          "Text": "9",
+		          "Type": "value",
+		          "Children": [
+		            {
+		              "Text": "(",
+		              "Type": "structure",
+		              "Children": []
+		            },
+		            {
+		              "Text": "4",
+		              "Type": "value",
+		              "Children": []
+		            },
+		            {
+		              "Text": "+",
+		              "Type": "structure",
+		              "Children": []
+		            },
+		            {
+		              "Text": "5",
+		              "Type": "value",
+		              "Children": []
+		            },
+		            {
+		              "Text": ")",
+		              "Type": "structure",
+		              "Children": []
+		            }
+		          ]
+		        },
+		        {
+		          "Text": ")",
+		          "Type": "structure",
+		          "Children": []
+		        }
+		      ]
+		    },
+		    {
+		      "Text": "+",
+		      "Type": "structure",
+		      "Children": []
+		    },
+		    {
+		      "Text": "62",
+		      "Type": "value",
+		      "Children": [
+		        {
+		          "Text": "Max(",
+		          "Type": "structure",
+		          "Children": []
+		        },
+		        {
+		          "Text": "22",
+		          "Type": "value",
+		          "Children": [
+		            {
+		              "Text": "(",
+		              "Type": "structure",
+		              "Children": []
+		            },
+		            {
+		              "Text": "20",
+		              "Type": "value",
+		              "Children": []
+		            },
+		            {
+		              "Text": "+",
+		              "Type": "structure",
+		              "Children": []
+		            },
+		            {
+		              "Text": "2",
+		              "Type": "value",
+		              "Children": []
+		            },
+		            {
+		              "Text": ")",
+		              "Type": "structure",
+		              "Children": []
+		            }
+		          ]
+		        },
+		        {
+		          "Text": ",",
+		          "Type": "structure",
+		          "Children": []
+		        },
+		        {
+		          "Text": "31",
+		          "Type": "value",
+		          "Children": []
+		        },
+		        {
+		          "Text": ",",
+		          "Type": "structure",
+		          "Children": []
+		        },
+		        {
+		          "Text": "16",
+		          "Type": "value",
+		          "Children": []
+		        },
+		        {
+		          "Text": ",",
+		          "Type": "structure",
+		          "Children": []
+		        },
+		        {
+		          "Text": "62",
+		          "Type": "value",
+		          "Children": []
+		        },
+		        {
+		          "Text": ",",
+		          "Type": "structure",
+		          "Children": []
+		        },
+		        {
+		          "Text": "40",
+		          "Type": "value",
+		          "Children": []
+		        },
+		        {
+		          "Text": ")",
+		          "Type": "structure",
+		          "Children": []
+		        }
+		      ]
+		    },
+		    {
+		      "Text": ")",
+		      "Type": "structure",
+		      "Children": []
+		    }
+		  ]
+		};
+		return tree;
+	}
+
+	$(document).ready(function(){
+
+		var treeData = getTreeData();
+		expressionExplorer("expressionExplorer", treeData);
+	});
+
+</script>
+
+<link href="ExpressionExplorer.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<pre>
+(((2+3)×(4+5))+Max(22, 31, 16, 62, 40))
+((5×9)+62)
+(45+62)
+107
+</pre>
+
+<div class="expressionExpander" id="expressionExplorer">
+</div>
+
+</body>
+
+</html>
