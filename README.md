@@ -1,4 +1,6 @@
-expression-explorer is a JQuery plugin for drilling down into an expression evaluation tree. Take the following expression consisting of digits, basic mathematical operators and functions:
+expression-explorer is a JQuery plugin for drilling down into an expression evaluation tree.
+
+Take the following expression consisting of digits, basic mathematical operators and functions:
 
        (2+3) × (4+5) + Max(20+2, 31, 16, 62, 40)
 This would evaluate as follows:
